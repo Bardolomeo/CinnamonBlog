@@ -1,0 +1,304 @@
+.popupdiv {
+	visibility: hidden;
+    position: fixed;
+    bottom: 9%;
+    right: 0;
+    left: 8%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #b19cd9;
+    border: 2px solid #41210F;
+    width: 60%;
+    height: 70%;
+    border-radius: 15px;
+}
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+body{
+	margin: 0px;
+	margin-bottom: 50px;
+	background-color: #FFFFB3;
+	text-align: center;
+	height: 100%;
+}
+
+hr{
+	size: 1212px;margin-left: 57px;
+    margin-right: 57px;
+    border: 1px dotted #41210F;
+}
+
+.footer-p{
+	font-family: 'Josefin Sans', sans-serif;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.show{
+	visibility: visible;
+}
+
+.header{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+}
+
+.header-btn:hover{
+	color: #FF80C1;
+}
+
+.header-btn{
+	background-color: transparent;
+	color: #41210F;
+	width: 140px;
+	height: 30px;
+	font-family: 'Josefin Sans', sans-serif;
+	border: none;
+	font-size: 20px;
+	text-overflow: ellipsis;
+}
+
+.profile-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile-pic{
+	height: 288px;
+	width: 288px;
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 15px;
+    background-color: #F2C5D2;
+}
+
+.title{
+	font-family: 'Josefin Slab', sans-serif;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	color: #41210F;
+
+}
+
+.name{
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 601px){
+	.entries{
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.element{
+		margin: 20px;
+	}
+
+	.entTit{
+		padding-left: 120px;
+		padding-right: 160px;
+	}
+
+	.editTitle{
+		margin: 12%; 
+		margin-bottom: 0px;
+		height: 70px;
+	}
+
+	#cinnamonroll{
+		z-index: -1;
+		position: fixed;
+		top: 10%;
+		left: 5%;
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.entries{
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	.popupdiv{
+		align-self: center;
+		width: 90%;
+		left: 5%;
+		right: 5%;
+		padding-bottom: 20%;
+	}
+
+
+	.entryTitle{
+		width: 80%;
+		font-size: larger;
+	}
+
+	.element{
+		margin: 10%;
+	}
+
+	.entry-div{
+		flex-direction: column;
+	}
+
+	.button-div{
+		display: flex;
+		flex-direction: row-reverse;
+		align-self: flex-end;
+		padding-right: 30px;
+		height: 40px;
+	}
+
+	.entTit{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	.editTitle{
+		position: relative;
+		margin: 12%;
+		right: 3%; 
+		margin-bottom: 0px;
+		height: 70px;
+	}
+
+	#cinnamonroll{
+		z-index: -1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 170px;
+	}
+}
+
+.entry{
+	margin-top: 10px;
+	margin-bottom:10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border:2px solid #41210F;
+	border-radius: 20px;
+}
+
+.allEntries{
+	display: flex;
+	flex-direction: column;
+}
+
+.lblue{
+	background-color: #B3E3EE;
+}
+
+.pink{
+	background-color: #F2C5D2;
+}
+
+.body{
+	color:#41210F;
+	font-family: 'Josefin Sans', sans-serif;
+	max-width: 80%;
+    word-wrap: break-word;
+}
+
+.entrytext{
+	margin:15px;
+}
+
+.newEntryBtn{
+	position: fixed;
+	z-index: 1;
+	width: 80px;
+	height: 80px;
+	bottom: 50px;
+	left: 30px;
+	background-color: #FF80C1;
+	border-radius: 100%;
+	border: 2px solid #41210F;
+}
+
+.pencil{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	top:25%;
+}
+
+.entryForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.element{
+	background-color: transparent;
+}
+
+.entryTitle{
+	border: 0px solid #41210F;
+	border-bottom: 1px solid;
+	text-align: center;
+}
+
+.entryContent{
+	width: 80%;
+	height: 40vh;
+	border: 1px solid #41210F;
+	border-radius: 5px;
+	margin-bottom: 0;
+}
+
+.element:focus{
+	background-color: #FFFFB5;
+}
+
+.cross{
+	width: 20px;
+	height: 20px;
+}
+
+.cross:hover{
+	filter: saturate(100);
+}
+
+.cross-form{
+	order: -1;
+	align-self: flex-end;
+	margin-top:10px;
+	margin-right: 10px;
+}
+
+.entry-div{
+	display: flex; 
+	padding: 20px;
+	justify-content: center;
+}
+
+.edit-form{
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	padding-left: 12%;
+}
+
+#mysweetpiano{
+	z-index: -1;
+	position: fixed;
+	bottom: 10%;
+	right: 2%;
+	width: 150px;
+}

@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs")%>
+<div class="profile-card">
+	<img class="profile-pic" src="/imgs/avatar-1577909_1280.png" alt="Shadow the Edgehog">
+	<h1 class="title name">Bard Sapio</h1>
+	<p class="body">Hello, I'm mr Frog, this is my blog</p>
+</div>
+<hr class="hr">
+<div class="entries">
+	<%if (locals.entry[1]){%>
+		<% for (var i = entry.length - 1; i > 0 ; i--) {%>
+			<%if (i % 2 != 0){%>
+			<div class="entry lblue">
+				<h2 class="title entrytext"><%=entry[i].title%></h2>
+				<p class="body entrytext"><%=entry[i].body%></p>
+				<form class="cross-form" action="/removed" method="post">
+					<input type="hidden" name="toRemove" value=<%=i%>>
+					<input class="cross" type="image" src="/imgs/x-mark.png" name="removeElement">
+				</form>
+			</div>
+			<% }else{%>
+				<div class="entry pink">
+					<h2 class="title entrytext"><%=entry[i].title%></h2>
+					<p class='body entrytext'><%=entry[i].body%></p>
+					<form class="cross-form" action="/removed" method="post">
+						<input type="hidden" name="toRemove" value=<%=i%>>
+						<input class="cross" type="image" src="/imgs/x-mark.png" name="removeElement">
+					</form>
+				</div>
+			<% } %>
+		<%}%>
+	<%}%>
+</div>
+
+
+<%- include("partials/footer.ejs")%>

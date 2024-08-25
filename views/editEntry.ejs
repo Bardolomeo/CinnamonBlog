@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+<% if (locals.index && locals.entries[1]){%>
+	<form class="edit-form" action="/postedit" method="post">
+		<input type="hidden" name="indToEdit" value=<%=index%>>
+		<textarea class="element entryTitle editTitle" type="text" name="titleEdited"><%=entries[index].title%></textarea>
+		<textarea class="element entryContent" style="background-color: #b19cd9; align-self: center;" name="bodyEdited"><%=entries[index].body%></textarea>
+		<input class="element header-btn" style="border: 0 solid transparent; text-decoration: underline; font-size: larger; font-family: 'Josefin Sans', sans-serif;" type="submit" name="editElement" value="Submit">
+	</form>
+<% } %>
+<%- include("partials/footer.ejs") %>

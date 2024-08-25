@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+<% if (locals.index && locals.entries[1]){%>
+<h1 style=" padding-top: 50px;" class="title entTit"><%=entries[index].title%></h1>
+<div class="entry-div">
+	<p class="entry entries", style="background-color: #b19cd9; padding: 20px; font-family: 'Josefin Sans', sans-serif;"><%=entries[index].body%></p>
+	<div class="button-div" style="width: 40px;">
+		<form style="height: 40px;" action="/edit" method="post">
+			<input type="hidden" name="indToEdit" value=<%=index%>>
+			<input type="image" style="width: 40px; height: 40px;" name="editElement" src="/imgs/icons8-edit-64.png">
+		</form>
+		<form style="height: 40px; margin: 0;" class="cross-form" action="/removed" method="post">
+			<input type="hidden" name="toRemove" value=<%=index%>>
+			<input class="cross" style="width: 40px; height: 40px;" type="image" name="removeElement" src="/imgs/x-mark.png">
+		</form>
+	</div>
+</div>
+<% } %>
+<%- include("partials/footer.ejs") %>

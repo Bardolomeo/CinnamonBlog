@@ -1,0 +1,22 @@
+<script src="../src/behaviour.js" charset="UTF-8"></script>
+<div class="newEntryBtn" onclick="popUpFunction()">
+	<input class="pencil" type="image" src="/imgs/icons8-edit-64.png">
+</div>
+<div class="popupdiv">
+	<form class="entryForm" action="/" method="post">
+		<input class="element entryTitle" type="text" name="entryTitle" placeholder="Entry Title" required>
+		<textarea class="element entryContent" type="text" name="entryContent" placeholder="Entry Body" id="entryNew" required></textarea>
+		<input class="element header-btn" style="text-decoration: underline;" href="/" type="submit" value="Submit" name="submit">
+	</form>
+</div>
+</main>
+
+<footer>
+  <p class="footer-p">Copyright © Bard Sapio
+    <% var date = new Date();%>
+    <%=date.getYear() -100 + 2000%>
+  </p>
+</footer>
+</body>
+
+</html>

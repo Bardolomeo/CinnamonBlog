@@ -1,0 +1,19 @@
+{
+  "name": "cinnamonblog",
+  "version": "1.0.0",
+  "description": "A blog made with js",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bard Sapio",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "jsdom": "^24.1.1"
+  }
+}
