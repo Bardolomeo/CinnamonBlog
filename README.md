@@ -1,5 +1,5 @@
 
-![Logo](https://gist.github.com/user-attachments/assets/021e3aa1-f7f8-482b-bb6a-fae4daca2e23)
+![Logo](pictures/cinnamonblog_logo.png)
 
 
 # Cinnamonblog
@@ -32,9 +32,14 @@ Install with npm
 
 ## Screenshots
 
-![App Screenshot](https://gist.github.com/user-attachments/assets/00f59817-ced6-4c29-9d7b-48b296ded05a)
+![App Screenshot](pictures/Screenshot1.png)
 
-![App Screenshot](https://gist.github.com/user-attachments/assets/3309a625-3118-4bfe-b1a6-366995746a03)
+![App Screenshot](pictures/Screenshot2.png)
+
+![App Screenshot](pictures/Screenshot3.png)
+
+![App Screenshot](pictures/Screenshot4.png)
+
 
 ![App Screenshot](https://gist.github.com/user-attachments/assets/18cb583d-4213-446f-9a7e-5190a017a6fc)
 
