@@ -32,17 +32,12 @@ Install with npm
 
 ## Screenshots
 
-![App Screenshot](pictures/Screenshot1.png)
-
 ![App Screenshot](pictures/Screenshot2.png)
+
+![App Screenshot](pictures/Screenshot1.png)
 
 ![App Screenshot](pictures/Screenshot3.png)
 
 ![App Screenshot](pictures/Screenshot4.png)
-
-
-![App Screenshot](https://gist.github.com/user-attachments/assets/18cb583d-4213-446f-9a7e-5190a017a6fc)
-
-![App Screenshot](https://gist.github.com/user-attachments/assets/a06e80eb-b1f3-4255-aa9d-dfeee2e73859)
 
 
